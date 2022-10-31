@@ -1,4 +1,7 @@
 def delete(list_, index=None):
+    if index is None:
+        del list_[-1]
+        return list_
     list_.remove(index)  # TODO реализовать функцию удаления элемента из списка по индексу
     return list_
 
